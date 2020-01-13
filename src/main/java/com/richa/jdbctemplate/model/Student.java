@@ -1,4 +1,4 @@
-package com.richa.jdbc.model;
+package com.richa.jdbctemplate.model;
 
 public class Student {
     private Long id;

@@ -1,7 +1,6 @@
-package com.richa.jdbc.repository;
+package com.richa.jdbctemplate.repository;
 
-import com.richa.jdbc.model.Student;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.richa.jdbctemplate.model.Student;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
