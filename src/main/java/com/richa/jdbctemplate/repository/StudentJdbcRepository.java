@@ -46,9 +46,11 @@ public class StudentJdbcRepository {
                 new Object[]{student.getId(), student.getName(), student.getPassportNumber()});
     }
 
-    public int update(Student student) {
-        return jdbcTemplate.update("update student " + " set name = ? ,passport_number = ? " + " where id = ?",
+    public Student update(Student student) {
+        jdbcTemplate.update("update student " + " set name = ? ,passport_number = ? " + " where id = ?",
                 new Object[]{student.getName(), student.getPassportNumber(), student.getId()});
+
+        return findById(student.getId());
     }
 
     public int delete(long id) {
